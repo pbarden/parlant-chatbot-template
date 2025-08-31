@@ -1,0 +1,23 @@
+:root {
+  --pc-primary: #2563eb;
+  --pc-bg: #fff;
+  --pc-border: #e5e7eb;
+  --pc-muted: #6b7280;
+  --pc-agent-bg: #f9fafb;
+  --pc-radius: 14px;
+}
+/* Basic styles for widget (mirrors backend example). */
+.parlant-wrapper { position: fixed; right: 16px; bottom: 16px; z-index: 2147483000; }
+.parlant-popup { display: inline-flex; align-items: center; justify-content: center; height: 48px; min-width: 48px; padding: 0 16px; border-radius: 9999px; border: 1px solid var(--pc-border); background: var(--pc-primary); color: #fff; cursor: pointer; box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
+.parlant-chat { width: 360px; max-width: 90vw; height: 520px; display: flex; flex-direction: column; border: 1px solid var(--pc-border); border-radius: var(--pc-radius); overflow: hidden; background: var(--pc-bg); box-shadow: 0 24px 48px rgba(0,0,0,0.12); }
+.parlant-header { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; background: var(--pc-bg); border-bottom: 1px solid var(--pc-border); font-weight: 600; }
+.parlant-title { margin: 0; font-size: 14px; }
+.parlant-msgs { flex: 1; overflow: auto; padding: 12px; display: flex; flex-direction: column; gap: 10px; background: #fafafa; }
+.parlant-msg { max-width: 80%; padding: 8px 10px; border-radius: 12px; line-height: 1.3; font-size: 14px; white-space: pre-wrap; word-wrap: break-word; }
+.parlant-msg.agent { background: var(--pc-agent-bg); border: 1px solid var(--pc-border); color: #111827; }
+.parlant-msg.customer { background: var(--pc-primary); color: #fff; margin-left: auto; }
+.parlant-status { padding: 4px 12px; font-size: 12px; color: var(--pc-muted); min-height: 18px; }
+.parlant-compose { display: flex; align-items: flex-end; gap: 8px; padding: 10px; border-top: 1px solid var(--pc-border); background: var(--pc-bg); }
+.parlant-input { flex: 1; resize: none; min-height: 38px; max-height: 140px; padding: 8px 10px; border: 1px solid var(--pc-border); border-radius: 10px; font: inherit; }
+.parlant-send { height: 38px; min-width: 68px; border: 1px solid var(--pc-border); background: var(--pc-primary); color: #fff; border-radius: 10px; cursor: pointer; }
+.hidden { display: none !important; }

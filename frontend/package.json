@@ -1,0 +1,10 @@
+{
+  "name": "parlant-chat-frontend",
+  "private": true,
+  "scripts": {
+    "dev": "serve frontend/public -l 5173"
+  },
+  "devDependencies": {
+    "serve": "14.2.3"
+  }
+}
